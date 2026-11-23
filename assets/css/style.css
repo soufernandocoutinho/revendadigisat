@@ -1,0 +1,857 @@
+/* Estilos de :root. */
+/* Documentação: estilos da página, organizados por componente e comportamento responsivo. */
+/* FC Soluções Digitais / Guia Panorama — landing page Digisat
+   Ajuste as variáveis abaixo para alinhar a página ao manual oficial da marca. */
+:root {
+  --fc-navy: #10243a;
+  --fc-navy-2: #183752;
+  --fc-blue: #1268c4;
+  --fc-blue-dark: #0d4f99;
+  --fc-cyan: #49c4e8;
+  --fc-green: #1ca568;
+  --fc-ink: #17283a;
+  --fc-muted: #627286;
+  --fc-bg: #f5f8fb;
+  --fc-border: #e1e8ef;
+  --fc-radius: 20px;
+  --fc-shadow: 0 18px 55px rgba(15, 37, 60, 0.09);
+}
+/* Estilos de *. */
+* {
+  box-sizing: border-box;
+}
+/* Estilos de html. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+/* Estilos de body. */
+body {
+  margin: 0;
+  color: var(--fc-ink);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.65;
+}
+/* Estilos de a. */
+a {
+  text-underline-offset: 0.2em;
+}
+/* Estilos de skip-link. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: #fff;
+  color: #000;
+  padding: 0.75rem 1rem;
+}
+/* Estilos de skip-link. */
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+/* Estilos de site-header. */
+.site-header {
+  background: rgba(16, 36, 58, 0.97);
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.08);
+}
+/* Estilos de navbar. */
+.navbar {
+  padding: 0.7rem 0;
+}
+/* Estilos de brand-logo. */
+.brand-logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
+}
+/* Estilos de brand-divider. */
+.brand-divider {
+  height: 35px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* Estilos de brand-caption. */
+.brand-caption {
+  font-size: 0.73rem;
+  line-height: 1.35;
+  color: #c8d7e6;
+}
+/* Estilos de brand-caption. */
+.brand-caption strong {
+  color: #fff;
+  font-size: 0.85rem;
+}
+/* Estilos de navbar, nav-link. */
+.navbar .nav-link {
+  color: #e4edf6;
+  font-size: 0.91rem;
+  padding: 0.7rem 0.65rem;
+}
+/* Estilos de navbar, nav-link, navbar. */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+}
+/* Estilos de btn. */
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 0.78rem 1.1rem;
+}
+/* Estilos de btn-primary. */
+.btn-primary {
+  background: var(--fc-blue);
+  border-color: var(--fc-blue);
+}
+/* Estilos de btn-primary, btn-primary. */
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--fc-blue-dark);
+  border-color: var(--fc-blue-dark);
+}
+/* Estilos de btn-outline-primary. */
+.btn-outline-primary {
+  color: var(--fc-blue);
+  border-color: #b7d3ef;
+}
+/* Estilos de btn-outline-primary, btn-outline-primary. */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background: var(--fc-blue);
+  border-color: var(--fc-blue);
+}
+/* Estilos de btn-whatsapp. */
+.btn-whatsapp {
+  color: #fff;
+  background: var(--fc-green);
+  border-color: var(--fc-green);
+}
+/* Estilos de btn-whatsapp, btn-whatsapp. */
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  color: #fff;
+  background: #168754;
+  border-color: #168754;
+}
+/* Estilos de hero-section. */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(73, 196, 232, 0.17),
+      transparent 34%
+    ),
+    linear-gradient(135deg, #10243a 0%, #163a58 65%, #0f2b45 100%);
+}
+/* Estilos de hero-section. */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  right: -130px;
+  bottom: -260px;
+}
+/* Estilos de hero-section, container. */
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+/* Estilos de hero-section, py-5. */
+.hero-section .py-5 {
+  padding-top: 5.4rem !important;
+  padding-bottom: 5.4rem !important;
+}
+/* Estilos de eyebrow, section-kicker. */
+.eyebrow,
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--fc-blue);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+/* Estilos de hero-section, eyebrow. */
+.hero-section .eyebrow {
+  color: #8fe3fa;
+}
+/* Estilos de eyebrow-dot. */
+.eyebrow-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--fc-cyan);
+  box-shadow: 0 0 0 5px rgba(73, 196, 232, 0.13);
+}
+/* Estilos de hero-section. */
+.hero-section h1 {
+  max-width: 700px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+/* Estilos de hero-section. */
+.hero-section h1 span {
+  color: #71d8f1;
+}
+/* Estilos de hero-lead. */
+.hero-lead {
+  max-width: 600px;
+  color: #d3e0ec;
+  font-size: 1.1rem;
+}
+/* Estilos de hero-trust. */
+.hero-trust {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: #d7e4ee;
+  font-size: 0.88rem;
+}
+/* Estilos de hero-trust. */
+.hero-trust p {
+  margin: 0;
+}
+/* Estilos de hero-trust. */
+.hero-trust strong {
+  color: #fff;
+}
+/* Estilos de trust-check. */
+.trust-check {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  color: #092a22;
+  background: #8de0b9;
+  border-radius: 50%;
+  font-weight: 900;
+}
+/* Estilos de hero-visual. */
+.hero-visual {
+  position: relative;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+/* Estilos de hero-image. */
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #fff;
+}
+/* Estilos de hero-visual-label. */
+.hero-visual-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0.35rem 0.1rem;
+  color: #d7e4ee;
+  font-size: 0.8rem;
+}
+/* Estilos de hero-visual-label. */
+.hero-visual-label img {
+  max-width: 100px;
+  max-height: 38px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 5px;
+  padding: 3px;
+}
+/* Estilos de hero-bottom-line. */
+.hero-bottom-line {
+  height: 5px;
+  background: linear-gradient(90deg, var(--fc-blue), var(--fc-cyan), #83e2bd);
+}
+/* Estilos de section-pad. */
+.section-pad {
+  padding: 5.3rem 0;
+}
+/* Estilos de intro-section. */
+.intro-section {
+  background: #fff;
+}
+/* Estilos de section-title. */
+.section-title {
+  margin: 0.55rem 0 1rem;
+  color: var(--fc-navy);
+  font-size: clamp(1.9rem, 3.3vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.16;
+}
+/* Estilos de section-copy. */
+.section-copy {
+  color: var(--fc-muted);
+  font-size: 1.02rem;
+}
+/* Estilos de value-card. */
+.value-card {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  background: #fff;
+}
+/* Estilos de value-icon. */
+.value-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  color: var(--fc-blue);
+  background: #eaf4ff;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+/* Estilos de value-card, step-card. */
+.value-card h3,
+.step-card h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--fc-navy);
+}
+/* Estilos de value-card, step-card. */
+.value-card p,
+.step-card p {
+  margin-bottom: 0;
+  color: var(--fc-muted);
+  font-size: 0.94rem;
+}
+/* Estilos de systems-section. */
+.systems-section {
+  background: var(--fc-bg);
+}
+/* Estilos de section-heading. */
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+/* Estilos de section-heading, section-copy. */
+.section-heading .section-copy {
+  max-width: 410px;
+  margin-bottom: 0.4rem;
+}
+/* Estilos de product-card. */
+.product-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(15, 37, 60, 0.04);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+/* Estilos de product-card. */
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fc-shadow);
+}
+/* Estilos de product-art. */
+.product-art {
+  display: grid;
+  place-items: center;
+  min-height: 190px;
+  padding: 1.4rem;
+  background: linear-gradient(145deg, #fff, #f0f6fb);
+  border-bottom: 1px solid var(--fc-border);
+}
+/* Estilos de product-art. */
+.product-art img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 145px;
+  object-fit: contain;
+}
+/* Estilos de product-body. */
+.product-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+/* Estilos de product-tag. */
+.product-tag {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  padding: 0.22rem 0.6rem;
+  color: #14589b;
+  background: #eaf4ff;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+/* Estilos de product-body. */
+.product-body h3 {
+  margin-bottom: 0.7rem;
+  color: var(--fc-navy);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+/* Estilos de product-body. */
+.product-body p {
+  color: var(--fc-muted);
+  font-size: 0.93rem;
+}
+/* Estilos de text-link. */
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--fc-blue);
+  font-weight: 750;
+  text-decoration: none;
+}
+/* Estilos de text-link. */
+.text-link:hover {
+  color: var(--fc-blue-dark);
+  text-decoration: underline;
+}
+/* Estilos de product-body, btn. */
+.product-body .btn {
+  margin-top: auto;
+}
+/* Estilos de catalog-note. */
+.catalog-note {
+  padding: 1rem 1.2rem;
+  color: #5b4a21;
+  background: #fff8e5;
+  border: 1px solid #f0dfad;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+/* Estilos de segments-section. */
+.segments-section {
+  background: #fff;
+}
+/* Estilos de segment-image-wrap. */
+.segment-image-wrap {
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  background: var(--fc-bg);
+}
+/* Estilos de segment-image-wrap. */
+.segment-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+/* Estilos de segment-pills. */
+.segment-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+/* Estilos de segment-pills. */
+.segment-pills span {
+  padding: 0.45rem 0.75rem;
+  color: #29435c;
+  background: #f0f5f9;
+  border: 1px solid #e2eaf1;
+  border-radius: 99px;
+  font-size: 0.82rem;
+}
+/* Estilos de why-section. */
+.why-section {
+  background: #f5f8fb;
+}
+/* Estilos de dealer-card. */
+.dealer-card {
+  overflow: hidden;
+  border: 1px solid var(--fc-border);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--fc-shadow);
+}
+/* Estilos de dealer-card. */
+.dealer-card > img {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  padding: 2rem;
+  object-fit: contain;
+}
+/* Estilos de dealer-card-footer. */
+.dealer-card-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--fc-border);
+  background: #fbfdff;
+}
+/* Estilos de dealer-card-footer. */
+.dealer-card-footer strong {
+  color: var(--fc-navy);
+}
+/* Estilos de dealer-card-footer. */
+.dealer-card-footer p {
+  margin: 0.15rem 0 0;
+  color: var(--fc-muted);
+  font-size: 0.88rem;
+}
+/* Estilos de dealer-dot. */
+.dealer-dot {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: var(--fc-green);
+  box-shadow: 0 0 0 5px #e2f7ed;
+}
+/* Estilos de check-list. */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+/* Estilos de check-list. */
+.check-list li {
+  position: relative;
+  margin: 0.7rem 0;
+  padding-left: 2rem;
+  color: #40566b;
+}
+/* Estilos de check-list. */
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #08764a;
+  background: #dff7ec;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+/* Estilos de steps-section. */
+.steps-section {
+  background: #fff;
+}
+/* Estilos de section-intro-narrow. */
+.section-intro-narrow {
+  max-width: 720px;
+}
+/* Estilos de step-card. */
+.step-card {
+  height: 100%;
+  padding: 1.6rem;
+  border: 1px solid var(--fc-border);
+  border-radius: var(--fc-radius);
+  background: #fff;
+}
+/* Estilos de step-card. */
+.step-card > span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 1.2rem;
+  border-radius: 14px;
+  color: #fff;
+  background: var(--fc-navy);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+/* Estilos de faq-section. */
+.faq-section {
+  background: var(--fc-bg);
+}
+/* Estilos de faq-accordion, accordion-item. */
+.faq-accordion .accordion-item {
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--fc-border);
+  border-radius: 13px !important;
+  background: #fff;
+}
+/* Estilos de faq-accordion, accordion-button. */
+.faq-accordion .accordion-button {
+  padding: 1.2rem 1.25rem;
+  color: var(--fc-navy);
+  background: #fff;
+  font-weight: 750;
+  box-shadow: none;
+}
+/* Estilos de faq-accordion, accordion-button, collapsed. */
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: var(--fc-blue-dark);
+  background: #f5faff;
+}
+/* Estilos de faq-accordion, accordion-body. */
+.faq-accordion .accordion-body {
+  color: var(--fc-muted);
+}
+/* Estilos de final-cta. */
+.final-cta {
+  padding: 0 0 5rem;
+  background: var(--fc-bg);
+}
+/* Estilos de final-cta-box. */
+.final-cta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(1.7rem, 4vw, 3.2rem);
+  border-radius: 24px;
+  color: #fff;
+  background: linear-gradient(120deg, #145aa0, #102c49);
+  box-shadow: 0 20px 45px rgba(16, 44, 73, 0.18);
+}
+/* Estilos de final-cta-box, section-kicker. */
+.final-cta-box .section-kicker {
+  color: #8fe3fa;
+}
+/* Estilos de final-cta-box. */
+.final-cta-box h2 {
+  max-width: 700px;
+  margin: 0.5rem 0 0.75rem;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+/* Estilos de final-cta-box, section-kicker. */
+.final-cta-box p:not(.section-kicker) {
+  max-width: 700px;
+  margin: 0;
+  color: #d4e2ee;
+}
+/* Estilos de final-cta-box, btn. */
+.final-cta-box .btn {
+  flex: 0 0 auto;
+  color: var(--fc-navy);
+  font-size: 0.95rem;
+}
+/* Estilos de site-footer. */
+.site-footer {
+  color: #d3deea;
+  background: #0b1c2d;
+}
+/* Estilos de footer-logo. */
+.footer-logo {
+  max-width: 170px;
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 7px;
+  padding: 4px;
+}
+/* Estilos de footer-description. */
+.footer-description {
+  max-width: 410px;
+  color: #aebfd0;
+  font-size: 0.92rem;
+}
+/* Estilos de footer-link, footer-nav, footer-contact. */
+.footer-link,
+.footer-nav a,
+.footer-contact a {
+  color: #c6e9ff;
+  text-decoration: none;
+}
+/* Estilos de footer-link, footer-nav, footer-contact. */
+.footer-link:hover,
+.footer-nav a:hover,
+.footer-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Estilos de footer-heading. */
+.footer-heading {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+/* Estilos de footer-nav. */
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Estilos de footer-nav. */
+.footer-nav li {
+  margin: 0.45rem 0;
+}
+/* Estilos de footer-contact. */
+.footer-contact {
+  margin-bottom: 0.45rem;
+  color: #c3d0dd;
+  font-size: 0.92rem;
+}
+/* Estilos de footer-bottom. */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  color: #9db0c3;
+  font-size: 0.78rem;
+}
+/* Estilos de footer-bottom. */
+.footer-bottom p {
+  margin: 0;
+}
+/* Estilos de whatsapp-float. */
+.whatsapp-float {
+  position: fixed;
+  z-index: 1050;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.1rem;
+  color: #fff;
+  background: #1ca568;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(10, 50, 35, 0.25);
+  font-weight: 800;
+  text-decoration: none;
+}
+/* Estilos de whatsapp-float, whatsapp-float. */
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+  color: #fff;
+  background: #168754;
+  transform: translateY(-2px);
+}
+/* Estilos de whatsapp-float. */
+.whatsapp-float > span:first-child {
+  font-size: 1.1rem;
+}
+/* Ajustes responsivos para (max-width: 991.98px). */
+@media (max-width: 991.98px) {
+  /* Estilos de brand-caption, brand-divider. */
+  .brand-caption,
+  .brand-divider {
+    display: none;
+  }
+  /* Estilos de section-heading. */
+  .section-heading {
+    display: block;
+  }
+  /* Estilos de section-heading, section-copy. */
+  .section-heading .section-copy {
+    max-width: 650px;
+  }
+  /* Estilos de final-cta-box. */
+  .final-cta-box {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/* Ajustes responsivos para (max-width: 575.98px). */
+@media (max-width: 575.98px) {
+  /* Estilos de brand-logo. */
+  .brand-logo {
+    width: 125px;
+  }
+  /* Estilos de hero-section, py-5. */
+  .hero-section .py-5 {
+    padding-top: 3.8rem !important;
+    padding-bottom: 3.8rem !important;
+  }
+  /* Estilos de hero-section. */
+  .hero-section h1 {
+    font-size: 2.35rem;
+  }
+  /* Estilos de hero-lead. */
+  .hero-lead {
+    font-size: 1rem;
+  }
+  /* Estilos de section-pad. */
+  .section-pad {
+    padding: 3.7rem 0;
+  }
+  /* Estilos de hero-visual. */
+  .hero-visual {
+    padding: 0.65rem;
+  }
+  /* Estilos de hero-visual-label. */
+  .hero-visual-label {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  /* Estilos de product-art. */
+  .product-art {
+    min-height: 155px;
+  }
+  /* Estilos de footer-bottom. */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  /* Estilos de whatsapp-float. */
+  .whatsapp-float {
+    right: 0.8rem;
+    bottom: 0.8rem;
+    padding: 0.75rem 0.9rem;
+  }
+  /* Estilos de float-label. */
+  .float-label {
+    display: none;
+  }
+}
+/* Ajustes responsivos para (prefers-reduced-motion: reduce). */
+@media (prefers-reduced-motion: reduce) {
+  /* Estilos de *,. */
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
